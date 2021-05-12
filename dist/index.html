@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dispatcher</title>
+</head>
+
+<body class="bg-light z-0 overflow-x-hidden">
+    <header class="flex bg-primary justify-between md:bg-light ">
+        <span class=" md:hidden ml-8 text-3xl cursor-pointer text-white" onclick="openMenu()">&#9776;</span>
+
+        <div id="Menu" class=" text-white  hidden overflow-y-hidden  block bg-primary h-screen w-screen  z-50 fixed top-0 justify-around text-sm font-sans ">
+            <div class="flex justify-between align-middle pl-8">
+                <a href="javascript:void(0)" class="  text-4xl " onclick="closeMenu()">&times;</a>
+                <button class="btn text-white text-base mr-4">Увійти</button>
+            </div>
+            <div class="mt-5 pl-8 flex flex-col justify-between h-4/5">
+                <h2 class="font-bold text-2xl ">Меню</h1>
+                    <div class="flex flex-col">
+                        <a class="text-xl py-4 " href="#">Як це працює</a>
+                        <a class="text-xl py-4 border-t border-b w-5/6" href="#">Відгуки</a>
+                        <a class="text-xl py-4 " href="#">Контакти</a>
+                    </div>
+                
+                <select
+                    class=" bg-transparent w-10 py-5 text-white font-medium text-sm focus:outline-none focus:text-gray-900 transition-colors duration-200">
+                    <option value="EN">EN</option>
+                    <option value="UA">UA</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="bg-primary w-3/6 text-white py-10 pl-16 justify-around font-sans hidden md:flex">
+            <a href="#" class="flex-1"> <img class="h-full" src="img/logo.png" alt="LOGO Not Found"> </a>
+            <div class="flex-1">
+                <a class="px-2" href="#">Як це працює</a>
+                <a class="px-2" href="#">Відгуки</a>
+                <a class="px-2" href="#">Контакти</a>
+            </div>
+        </div>
+
+        <div class="flex justify-end w-3/6 items-center ">
+            <select
+                class="block bg-transparent  py-1 text-primary-light font-medium text-sm focus:outline-none focus:text-gray-900 transition-colors duration-200">
+                <option value="EN">EN</option>
+                <option value="UA">UA</option>
+            </select>
+            <button class="btn md:text-primary  text-white mr-4 md:mx-16 ">Увійти</button>
+        </div>
+    </header>
+    <section class=" md:w-3/6 bg-primary  box-border text-white sm:pl-16 pl-8 md:pl-12 relative z-20">
+        <h1 class="pt-12 md:pt-40 font-semibold text-5xl w-3/5 ">TMS нового покоління</h1>
+        <h5 class="my-8 w-3/5">Сучасне рішення для автоматизації вантажних перевезень</h5>
+        <div class="imagePos md:h-auto  static md:absolute ">
+            <div class="relative z-20 mt-20">
+                <img class="h-auto md:h-3/4 " src="img/BigScreen.png" alt="Big Screen Not Found">
+                <img class="h-4/5 imageSmallPos" src="img/SmallScreen.png" alt="Small Screen Not Found">
+            </div>
+        </div>
+        <button class="text-primary btn bg-white mb-10 md:mb-48">Познайомитись з функціоналом</button>
+    </section>
+    <section class="md:m-16 ">
+        <h2 class="text-4xl m-8 md:m-12 sm:mx-0 font-bold text-primary">Для кого?</h2>
+        <div
+            class=" centerPos flex flex-col justify-evenly md:flex-row flex-wrap md:flex-nowrap content-center text-center md:w-full w-3/4 min-h-5/6 md:min-h-full max-h-80  font-semibold text-xl h-screen md:h-auto">
+            <div class="cardCustom">
+                <img class="centerPos h-4/6 pt-3" src="img/Logic.png" alt="Logic Not Found">
+                <p>Логістичні оператори</p>
+            </div>
+            <div class="cardCustom">
+                <img class="centerPos h-4/6 pt-3" src="img/Transport.png" alt="Transport Not Found">
+                <p>Транспортні компанії</p>
+            </div>
+            <div class=" cardCustom">
+                <img class="centerPos h-4/6 pt-3" src="img/Destribution.png" alt="Destribution Not Found">
+                <p>Рітейлери та дистриб’ютори</p>
+            </div>
+            <div class=" cardCustom">
+                <img class="centerPos h-4/6 pt-3" src="img/Production.png" alt="Production Not Found">
+                <p>Виробничі компанії</p>
+            </div>
+        </div>
+    </section>
+
+<script src="./index.js"></script>
+
+</body>
+
+</html>

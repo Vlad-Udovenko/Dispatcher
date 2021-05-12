@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.btn{
+    @apply border-2 border-primary py-2 font-bold rounded px-5;
+}   
+
+.cardCustom{
+    @apply flex-initial  w-1/2 bg-white md:mr-16 m-3 rounded-2xl border-2 cursor-pointer ;
+    flex: 1 1 120px;
+    min-width: 150px;
+    max-height: 210px;
+}
+
+.cardCustom:hover{
+   box-shadow: 0px 0px 25px rgba(82, 118, 170, 0.23);
+}
+
+.centerPos{
+    margin: 0 auto;
+}
+
+.imagePos{
+
+    right:-45vw;
+    top:10%;
+    z-index: 40;
+}
+.imageSmallPos{
+  position:absolute;
+  right:0;
+  bottom: 50%;
+  z-index: -1;
+}
